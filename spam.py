@@ -3,7 +3,7 @@ import time # So it doesn't write the entire thing at once!
 import keyboard # So you can stop the program!
 
 def shrek():
-    f = open("shrekmovie.txt", 'r') # Open the file
+    f = open("moviefile.txt", 'r') # Open the file, r is for raw referring to the method to get the file location
     for word in f:
         time.sleep(0.50)
         pyautogui.typewrite(word)
